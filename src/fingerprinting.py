@@ -1,4 +1,5 @@
 import sys
+import json
 
 tags = [ 'HTMLCanvasElement','CanvasRenderingContext2D','RTCPeerConnection','createDataChannel',
 'createOffer','AudioContext','OscillatorNode']
@@ -18,7 +19,12 @@ for f in os.listdir(name+"_files"):
         except:
             pass
 
-
+data = []
 for i in range(len(tags)):
     if found[i]:
-        print(tags[i])
+        data.append(tags[i])
+
+json_object = json.dumps({"tags_found":data}, indent = 4)
+
+with open(sys.argv[2], "w+") as outfile:
+    outfile.write(json_object)
