@@ -1,2 +1,5 @@
 input/*
 output/*
+processed/*
+processed_whois/*
+*.pyc
