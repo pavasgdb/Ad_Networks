@@ -39,7 +39,8 @@ def cookie_sync_whois(infile, outfile, mapping = {}):
             mapping[dict['redirect_domain']] = w_redirect.org
 
         print()
-        store.append(dict)
+        if (dict['redirect_whois'] != dict['request_whois']):
+            store.append(dict)
 
     print(mapping)
 

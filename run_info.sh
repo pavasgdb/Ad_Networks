@@ -1,0 +1,12 @@
+python script.py economictimes.indiatimes.com
+python script.py hindustantimes.com
+python script.py indianexpress.com
+python script.py indiatimes.com
+python script.py indiatoday.in
+python script.py indiatvnews.com
+python script.py ndtv.com
+python script.py news.abplive.com
+python script.py thehindu.com
+python script.py thequint.com
+python script.py timesofindia.indiatimes.com
+python script.py zeenews.india.com
